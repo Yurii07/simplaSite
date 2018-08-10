@@ -18,7 +18,7 @@
 {get_featured_products var=featured_products}
 {if $featured_products}
 <!-- Список товаров-->
-<h1>Рекомендуемые товары111</h1>
+<h1>Рекомендуемые товары</h1>
 <ul class="tiny_products">
 
 	{foreach $featured_products as $product}
