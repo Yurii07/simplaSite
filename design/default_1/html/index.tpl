@@ -129,12 +129,12 @@
 	<!-- Шапка -->
 	<div id="header">
 		<div id="logo">
-			<a href="/"><img src="design/{$settings->theme|escape}/images/logo.png" title="{$settings->site_name|escape}" alt="{$settings->site_name|escape}"/></a>
+			<a href="/"><img src="design/{$settings->theme|escape}/images/logo2.jpg" title="{$settings->site_name|escape}" alt="{$settings->site_name|escape}"/></a>
 		</div>	
-		<div id="contact">
-			(095) <span id="phone">545-54-54</span>
-			<div id="address">Москва, шоссе Энтузиастов 45/31, офис 453</div>
-		</div>	
+		{*<div id="contact">*}
+			{*(095) <span id="phone">545-54-54</span>*}
+			{*<div id="address">Москва, шоссе Энтузиастов 45/31, офис 453</div>*}
+		{*</div>	*}
 	</div>
 	<!-- Шапка (The End)--> 
 
@@ -151,12 +151,12 @@
 		<div id="left">
 
 			<!-- Поиск-->
-			<div id="search">
-				<form action="products">
-					<input class="input_search" type="text" name="keyword" value="{$keyword|escape}" placeholder="Поиск товара"/>
-					<input class="button_search" value="" type="submit" />
-				</form>
-			</div>
+			{*<div id="search">*}
+				{*<form action="products">*}
+					{*<input class="input_search" type="text" name="keyword" value="{$keyword|escape}" placeholder="Поиск товара"/>*}
+					{*<input class="button_search" value="" type="submit" />*}
+				{*</form>*}
+			{*</div>*}
 			<!-- Поиск (The End)-->
 
 			
@@ -257,7 +257,24 @@
 	
 	<!-- Футер -->
 	<div id="footer">
+
+		<!-- Меню -->
+		<ul id="menu">
+			{foreach $pages as $p}
+				{* Выводим только страницы из первого меню *}
+				{if $p->menu_id == 1}
+					<li {if $page && $page->id == $p->id}class="selected"{/if}>
+						<a data-page="{$p->id}" href="{$p->url}">{$p->name|escape}</a>
+					</li>
+				{/if}
+			{/foreach}
+		</ul>
+		<!-- Меню (The End) -->
+
 		<a href="http://simplacms.ru">Скрипт интернет-магазина Simpla</a>
+
+
+
 	</div>
 	<!-- Футер (The End)--> 
 	

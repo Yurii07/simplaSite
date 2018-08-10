@@ -7,10 +7,10 @@
 db_server = "localhost"
 
 ;Пользователь базы данных
-db_user = "u_xn7sbbko"
+db_user = "root"
 
 ;Пароль к базе
-db_password = "posGAZ1f"
+db_password = "dyb3t321"
 
 ;Имя базы
 db_name = "xn7sbbkolg"
@@ -47,7 +47,7 @@ smarty_caching = false;
 smarty_cache_lifetime = 0;
 smarty_debugging = false;
 smarty_html_minify = false;
- 
+
 [images]
 ;Использовать imagemagick для обработки изображений (вместо gd)
 use_imagick = true;
