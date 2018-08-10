@@ -4,13 +4,13 @@
 [database]
 
 ;Сервер базы данных
-db_server = "localhost"
+db_server = "localhost "
 
 ;Пользователь базы данных
-db_user = "root"
+db_user = "u_xn7kolgo"
 
 ;Пароль к базе
-db_password = "dyb3t321"
+db_password = "nylSuFt9"
 
 ;Имя базы
 db_name = "xn7sbbkolg"
