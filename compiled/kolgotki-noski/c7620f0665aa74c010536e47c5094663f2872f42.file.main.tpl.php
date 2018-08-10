@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2018-08-10 12:06:21
-         compiled from "E:\oserver\OSPanel\domains\simplaSite//design/default_1/html\main.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:296515b6d558dbb8610-82555034%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.7, created on 2018-08-10 12:14:44
+         compiled from "E:\oserver\OSPanel\domains\simplaSite//design/kolgotki-noski/html\main.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:283315b6d578470b889-37774085%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '64dadc35f223ed65bcc7b3ece1fdb00511056fd9' => 
+    'c7620f0665aa74c010536e47c5094663f2872f42' => 
     array (
-      0 => 'E:\\oserver\\OSPanel\\domains\\simplaSite//design/default_1/html\\main.tpl',
-      1 => 1533891980,
+      0 => 'E:\\oserver\\OSPanel\\domains\\simplaSite//design/kolgotki-noski/html\\main.tpl',
+      1 => 1533892422,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '296515b6d558dbb8610-82555034',
+  'nocache_hash' => '283315b6d578470b889-37774085',
   'function' => 
   array (
   ),
@@ -29,7 +29,7 @@ $_smarty_tpl->decodeProperties(array (
 
 <?php if ($_smarty_tpl->getVariable('featured_products')->value){?>
 <!-- Список товаров-->
-<h1>Рекомендуемые товары11a</h1>
+<h1>Рекомендуемые товары</h1>
 <ul class="tiny_products">
 
 	<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable;

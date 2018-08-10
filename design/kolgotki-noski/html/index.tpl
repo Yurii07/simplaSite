@@ -85,39 +85,28 @@
 	<!-- Верхняя строка -->
 	<div id="top_background">
 	<div id="top">
-	
-		<!-- Меню -->
-		<ul id="menu">
-			{foreach $pages as $p}
-				{* Выводим только страницы из первого меню *}
-				{if $p->menu_id == 1}
-				<li {if $page && $page->id == $p->id}class="selected"{/if}>
-					<a data-page="{$p->id}" href="{$p->url}">{$p->name|escape}</a>
-				</li>
-				{/if}
-			{/foreach}
-		</ul>
-		<!-- Меню (The End) -->
+
+
 	
 		<!-- Корзина -->
-		<div id="cart_informer">
+		{*<div id="cart_informer">*}
 			{* Обновляемая аяксом корзина должна быть в отдельном файле *}
-			{include file='cart_informer.tpl'}
-		</div>
+			{*{include file='cart_informer.tpl'}*}
+		{*</div>*}
 		<!-- Корзина (The End)-->
 
 		<!-- Вход пользователя -->
-		<div id="account">
-			{if $user}
-				<span id="username">
-					<a href="user">{$user->name}</a>{if $group->discount>0},
-					ваша скидка &mdash; {$group->discount}%{/if}
-				</span>
-				<a id="logout" href="user/logout">выйти</a>
-			{else}
-				<a id="register" href="user/register">Регистрация</a>
-				<a id="login" href="user/login">Вход</a>
-			{/if}
+		{*<div id="account">*}
+			{*{if $user}*}
+				{*<span id="username">*}
+					{*<a href="user">{$user->name}</a>{if $group->discount>0},*}
+					{*ваша скидка &mdash; {$group->discount}%{/if}*}
+				{*</span>*}
+				{*<a id="logout" href="user/logout">выйти</a>*}
+			{*{else}*}
+				{*<a id="register" href="user/register">Регистрация</a>*}
+				{*<a id="login" href="user/login">Вход</a>*}
+			{*{/if}*}
 		</div>
 		<!-- Вход пользователя (The End)-->
 
@@ -128,15 +117,18 @@
 	
 	<!-- Шапка -->
 	<div id="header">
+		<p>Сайт официального дистрибьютора торговых марок: ТМ Акцент, ТМ Бонус, ТМ Легка хода</p>
 		<div id="logo">
 			<a href="/"><img src="design/{$settings->theme|escape}/images/logo2.jpg" title="{$settings->site_name|escape}" alt="{$settings->site_name|escape}"/></a>
-		</div>	
+
+		</div>
 		{*<div id="contact">*}
 			{*(095) <span id="phone">545-54-54</span>*}
 			{*<div id="address">Москва, шоссе Энтузиастов 45/31, офис 453</div>*}
 		{*</div>	*}
+
 	</div>
-	<!-- Шапка (The End)--> 
+	<!-- Шапка (The End)-->
 
 
 	<!-- Вся страница --> 
@@ -144,6 +136,18 @@
 	
 		<!-- Основная часть --> 
 		<div id="content">
+			<!-- Меню -->
+			<ul id="menu">
+				{foreach $pages as $p}
+					{* Выводим только страницы из первого меню *}
+					{if $p->menu_id == 1}
+						<li {if $page && $page->id == $p->id}class="selected"{/if}>
+							<a data-page="{$p->id}" href="{$p->url}">{$p->name|escape}</a>
+						</li>
+					{/if}
+				{/foreach}
+			</ul>
+			<!-- Меню (The End) -->
 			{$content}
 		</div>
 		<!-- Основная часть (The End) --> 
