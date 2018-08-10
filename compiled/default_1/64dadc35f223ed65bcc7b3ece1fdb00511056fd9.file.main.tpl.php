@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2018-08-09 17:12:01
+<?php /* Smarty version Smarty-3.0.7, created on 2018-08-10 11:08:49
          compiled from "E:\oserver\OSPanel\domains\simplaSite//design/default_1/html\main.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:127525b6c4bb11d95e2-57194877%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:34965b6d4811bc2841-43278982%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '64dadc35f223ed65bcc7b3ece1fdb00511056fd9' => 
     array (
       0 => 'E:\\oserver\\OSPanel\\domains\\simplaSite//design/default_1/html\\main.tpl',
-      1 => 1533823920,
+      1 => 1533888079,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '127525b6c4bb11d95e2-57194877',
+  'nocache_hash' => '34965b6d4811bc2841-43278982',
   'function' => 
   array (
   ),
@@ -29,7 +29,7 @@ $_smarty_tpl->decodeProperties(array (
 
 <?php if ($_smarty_tpl->getVariable('featured_products')->value){?>
 <!-- Список товаров-->
-<h1>Рекомендуемые товары</h1>
+<h1>Рекомендуемые товары111</h1>
 <ul class="tiny_products">
 
 	<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable;
