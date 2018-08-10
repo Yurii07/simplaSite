@@ -4,7 +4,7 @@
 [database]
 
 ;Сервер базы данных
-db_server = "localhost "
+db_server = "localhost"
 
 ;Пользователь базы данных
 db_user = "u_xn7kolgo"
